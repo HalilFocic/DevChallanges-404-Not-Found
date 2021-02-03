@@ -61,4 +61,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - GitHub [@HalilFocic](https://github.com/HalilFocic)
-- Twitter [@your-twitter](https://twitter.com/HalilFocic)
+- Twitter [@HalilFocic](https://twitter.com/HalilFocic)
