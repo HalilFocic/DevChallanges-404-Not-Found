@@ -1,0 +1,84 @@
+.scarecrow-picture {
+  width: 539px;
+  height: 447px;
+  margin: auto;
+}
+.not-found {
+  position: absolute;
+  width: 133px;
+  height: 25px;
+  left: 77px;
+  top: 40px;
+
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #333333;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  padding-top: 10%;
+  display: flex;
+  text-align: center;
+}
+.scarecrow {
+  margin-left: 40px;
+}
+.bad-news {
+  margin-left: 8%;
+  width: 50%;
+}
+.bad-news-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  width: 90%;
+  text-align: left;
+  /* Gray 1 */
+
+  color: #333333;
+}
+.bad-news-desc {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  width: 50%;
+  color: #4f4f4f;
+}
+.back-to-home {
+  background: #333333;
+  color: white;
+  border: none;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.footer {
+  position: absolute;
+  bottom: 15px;
+  left: 40%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.btn-container {
+  margin-top: 7%;
+  text-align: left;
+}

@@ -6,7 +6,7 @@ function App() {
       <div className="not-found">404 NOT FOUND</div>
       <div className="container">
         <section className="scarecrow">
-          <img src={scarecrow} alt="scarecrow" />
+          <img src={scarecrow} alt="scarecrow" className="scarecrow-picture" />
         </section>
         <section className="bad-news">
           <div className="bad-news-title">I have bad news for you</div>
@@ -14,10 +14,12 @@ function App() {
             The page you are looking for might be removed or is temporarily
             unavailable.
           </div>
-          <button className="back-to-home">BACK TO HOMEPAGE</button>
+          <div className="btn-container">
+            <button className="back-to-home">BACK TO HOMEPAGE</button>
+          </div>
         </section>
-        <footer className="footer">Halil Focic @ DevChallenges.io</footer>
       </div>
+      <footer className="footer">Halil Focic @ DevChallenges.io</footer>
     </div>
   );
 }
