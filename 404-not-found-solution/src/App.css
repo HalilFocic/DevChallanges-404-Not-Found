@@ -88,8 +88,47 @@
   }
   .bad-news {
     width: 100%;
+    margin: 0;
   }
   .bad-news-title {
     width: 100%;
+  }
+  .scarecrow-picture {
+    width: 271px;
+    height: 224px;
+  }
+  .scarecrow {
+    margin: 0;
+    margin-top: 15%;
+  }
+  .not-found {
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 40px;
+    top: 20px;
+  }
+  .bad-news-title {
+    margin-left: 15px;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+  }
+  .bad-news-desc {
+    width: 90%;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+  .back-to-home {
+    margin-left: 5%;
   }
 }
