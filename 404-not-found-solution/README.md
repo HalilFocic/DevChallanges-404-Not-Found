@@ -1,4 +1,3 @@
-<!-- Please update value in the {}  -->
 
 <h1 align="center">404 Not Found by Halil</h1>
 
@@ -22,7 +21,6 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
@@ -32,7 +30,6 @@
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
-<!-- OVERVIEW -->
 
 ## Overview
 
