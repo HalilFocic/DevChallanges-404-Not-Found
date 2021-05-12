@@ -14,20 +14,33 @@ const Input = ({
 }) => {
   const [hovered, setHovered] = useState(false);
   const [focused, setFocused] = useState(false);
-
+  const [inputValue, setInputValue] = useState(value);
   return (
     <div
       className="input-container"
-      onBlur={() => setHovered(false)}
-      onFocus={() => setHovered(true)}
+      onBlur={() => setFocused(false)}
+      onFocus={() => setFocused(true)}
     >
       <label
         htmlFor="input"
-        className={`input-label ${hovered ? "hovered" : null}`}
+        className={`input-label ${disabled ? "disabled-label" : ""} ${
+          error ? "error" : ""
+        } ${error && focused ? "error-focus" : focused ? "focused" : ""}`}
       >
         Label
       </label>
-      <input className="input" type="text" />
+
+      <input
+        className={`input ${error ? "error-input" : ""} ${
+          disabled ? "disabled" : ""
+        }`}
+        type="text"
+        placeholder={value ? "" : "Placeholder"}
+        value={disabled ? "" : inputValue ? inputValue : ""}
+        onChange={(e) => {
+          setInputValue(e.target.value);
+        }}
+      />
     </div>
   );
 };

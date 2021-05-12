@@ -19,6 +19,34 @@
 .input-container {
   width: 200px;
 }
-.hovered {
+.focused {
   color: #2962ff;
+}
+.hovered {
+  color: #333333;
+}
+.error-input {
+  width: 200px;
+  height: 56px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #d32f2f;
+}
+.error {
+  color: red;
+}
+.error-focus {
+  color: #333333;
+}
+.error-input:hover {
+  border: 1px solid #333333;
+}
+.disabled-label {
+  color: #333333 !important;
+}
+.disabled {
+  background: #f2f2f2 !important;
+  color: #828282 !important;
+  border: 1px solid #e0e0e0 !important;
 }
