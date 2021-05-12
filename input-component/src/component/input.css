@@ -1,0 +1,24 @@
+.input {
+  width: 200px;
+  height: 56px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+}
+.input:hover {
+  border: 1px solid #333333;
+}
+.input:focus {
+  border: 1px solid #2962ff;
+}
+.input-label {
+  display: block;
+  text-align: left;
+}
+.input-container {
+  width: 200px;
+}
+.hovered {
+  color: #2962ff;
+}
