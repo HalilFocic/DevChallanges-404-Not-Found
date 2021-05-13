@@ -1,66 +1,49 @@
-.input {
-  width: 200px;
-  height: 56px;
-  border: 1px solid #828282;
+* {
   box-sizing: border-box;
-  border-radius: 8px;
-  outline: none;
-}
-.input:hover {
-  border: 1px solid #333333;
-}
-.input:focus {
-  border: 1px solid #2962ff;
-}
-.input-label {
-  display: block;
-  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 .input-container {
-  width: 200px;
-}
-.focused {
-  color: #2962ff;
-}
-.hovered {
-  color: #333333;
-}
-.error-input {
-  width: 200px;
-  height: 56px;
-  box-sizing: border-box;
   border-radius: 8px;
-  outline: none;
-  border: 1px solid #d32f2f;
 }
-.error {
-  color: #d32f2f;
+.input {
+  display: grid;
+  grid-template-columns: 0.2fr 8fr 0.5fr;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
 }
-.error-focus {
-  color: #333333;
+.text-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  height: 56px;
 }
-.error-input:hover {
-  border: 1px solid #333333;
+
+.sm {
+  height: 40px;
 }
-.disabled-label {
-  color: #333333 !important;
+.full-width {
+  width: 100%;
 }
-.disabled {
-  background: #f2f2f2 !important;
-  color: #828282 !important;
-  border: 1px solid #e0e0e0 !important;
+.text-area {
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+
+/* Icons  */
+.my-icon {
+  padding-top: 15px;
+}
+.start-icon {
+  padding-left: 0;
+}
+.end-icon {
+  padding-right: 0;
+  margin-right: auto;
 }
 .helper {
-  font-size: 10px;
+  font-size: 12px;
   color: #828282;
-  position: relative;
-  bottom: 4px;
-}
-.helper-error {
-  color: #d32f2f;
-}
-.input-tag {
-  background: transparent;
-  border: 0;
-  margin-top: 15px;
 }
