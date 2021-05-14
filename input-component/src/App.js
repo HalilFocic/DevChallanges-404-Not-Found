@@ -8,6 +8,7 @@ function App() {
         helperText="This is helper text"
         endIcon="settings"
         startIcon="settings"
+        error
       ></Input>
     </div>
   );
