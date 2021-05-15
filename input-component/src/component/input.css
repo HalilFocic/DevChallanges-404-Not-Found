@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Roboto";
 }
 .input-container {
   border-radius: 8px;
@@ -12,9 +13,9 @@
   border: 1px solid #828282;
   border-radius: 8px;
   width: 200px;
+  padding-left: 10px;
 }
 .text-input {
-  width: 100%;
   border: 0;
   outline: 0;
   height: 56px;
@@ -30,6 +31,7 @@
   border: 0;
   outline: 0;
   resize: none;
+  width: 100px;
 }
 
 /* Icons  */
@@ -81,4 +83,10 @@
 }
 .default-focused {
   color: #2962ff;
+}
+.no-pad {
+  padding: 0;
+}
+.small-input {
+  height: 38px;
 }

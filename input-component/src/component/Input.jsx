@@ -30,14 +30,20 @@ const Input = ({
       <div
         className={`input ${size} ${fullWidth ? "full-width" : ""} ${
           typeTag + "-input"
-        } ${typeTag == "default" && focused ? "default-input-focused" : ""}`}
+        } ${typeTag === "default" && focused ? "default-input-focused" : ""}`}
       >
         {startIcon && (
-          <i className="material-icons my-icon start-icon">{startIcon}</i>
+          <i
+            className={`material-icons my-icon start-icon ${
+              multiline || size === "sm" ? "no-pad" : ""
+            }`}
+          >
+            {startIcon}
+          </i>
         )}
         {!multiline && (
           <input
-            className="text-input"
+            className={`text-input ${size === "sm" ? "small-input" : ""}`}
             type="text"
             placeholder={value ? "" : "Placeholder"}
             value={disabled ? "" : inputValue}
@@ -61,10 +67,32 @@ const Input = ({
         {multiline && (
           <textarea
             className={`text-area ${fullWidth ? "full-width" : ""}`}
+            onChange={(e) => {
+              setInputValue(e.target.value);
+            }}
+            onMouseOver={() => {
+              setHovered(true);
+            }}
+            onMouseOut={() => {
+              setHovered(false);
+            }}
+            onFocus={() => {
+              setFocused(true);
+            }}
+            onBlur={() => {
+              setFocused(false);
+            }}
+            placeholder="Placeholder"
             rows={rows}
-          ></textarea>
+          >
+            {value ? value : ""}
+          </textarea>
         )}
-        {endIcon && <i className="material-icons my-icon">{endIcon}</i>}
+        {endIcon && (
+          <i className={`material-icons my-icon ${multiline ? "no-pad" : ""}`}>
+            {endIcon}
+          </i>
+        )}
       </div>
       <span
         className={`helper ${typeTag} ${`${typeTag}-${
