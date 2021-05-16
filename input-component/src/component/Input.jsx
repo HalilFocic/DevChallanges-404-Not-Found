@@ -29,18 +29,22 @@ const Input = ({
       >
         Label
       </label>
-
-      <input
+      <div
         className={`input ${error ? "error-input" : ""} ${
           disabled ? "disabled" : ""
         }`}
-        type="text"
-        placeholder={value ? "" : "Placeholder"}
-        value={disabled ? "" : inputValue ? inputValue : ""}
-        onChange={(e) => {
-          setInputValue(e.target.value);
-        }}
-      />
+      >
+        <input
+          className="input-tag"
+          type="text"
+          placeholder={value ? "" : "Placeholder"}
+          value={disabled ? "" : inputValue}
+          onChange={(e) => {
+            setInputValue(e.target.value);
+          }}
+        />
+      </div>
+      <span class={`helper ${error ? "helper-error" : ""}`}>{helperText}</span>
     </div>
   );
 };

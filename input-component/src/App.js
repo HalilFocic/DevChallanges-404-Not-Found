@@ -3,8 +3,8 @@ import Input from "./component/Input";
 function App() {
   return (
     <div className="App">
-      <Input></Input>
-      <Input error />
+      <Input value="Test value" helperText="This is helper text"></Input>
+      <Input error helperText="Help please" />
       <Input disabled />
     </div>
   );

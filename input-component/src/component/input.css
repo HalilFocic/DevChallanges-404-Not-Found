@@ -34,7 +34,7 @@
   border: 1px solid #d32f2f;
 }
 .error {
-  color: red;
+  color: #d32f2f;
 }
 .error-focus {
   color: #333333;
@@ -49,4 +49,18 @@
   background: #f2f2f2 !important;
   color: #828282 !important;
   border: 1px solid #e0e0e0 !important;
+}
+.helper {
+  font-size: 10px;
+  color: #828282;
+  position: relative;
+  bottom: 4px;
+}
+.helper-error {
+  color: #d32f2f;
+}
+.input-tag {
+  background: transparent;
+  border: 0;
+  margin-top: 15px;
 }
