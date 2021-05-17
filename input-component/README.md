@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://halil-btn-component.netlify.app/">
+    <a href="https://halil-input-component.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/HalilFocic/reusable-component">
+    <a href="https://github.com/HalilFocic/DevChallenges/tree/master/input-component">
       Solution
     </a>
     <span> | </span>
@@ -32,7 +32,7 @@
 
 ## Overview
 
-![screenshot](// ADD SS LATER)
+![screenshot](https://i.ibb.co/bLrnWq3/inputcomp.png)
 
 ### Built With
 
