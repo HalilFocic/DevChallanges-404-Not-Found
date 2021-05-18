@@ -1,7 +1,11 @@
 import "./App.css";
 import Logo from "./logo.png";
 import StaysList from "./StaysList";
+import stays from "./stays.json";
+import React, { useState } from "react";
 function App() {
+  const [stayList, setStayList] = useState(stays);
+  const [stayNumber, setStayNumber] = useState(stays.length);
   return (
     <div className="App">
       <div className="wrapper">
@@ -17,9 +21,15 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="wind-title">Stays in Finland</div>
-        <StaysList />
+        <div className="title-bar">
+          <div className="wind-title">Stays in Finland</div>
+          <div className="number-of-stays">{stayNumber} stays</div>
+        </div>
+        <StaysList stays={stays} />
       </div>
+      <footer className="my-footer">
+        Created by <strong>Halil Focic</strong> - devChallenges.io
+      </footer>
     </div>
   );
 }

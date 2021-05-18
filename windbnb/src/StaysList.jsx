@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from "react";
-import stays from "./stays.json";
-const StaysList = () => {
-  const [stayList, setStayList] = useState(stays);
-  console.log(stayList);
+import React, { useState } from "react";
 
-  const fetchStays = () => {};
-  useEffect(() => {
-    fetchStays();
-  }, []);
+const StaysList = ({ stays }) => {
+  const [stayList, setStayList] = useState(stays);
+  const [stayNumber, setStayNumber] = useState(stays.length);
+
   return (
     <div className="stay-list">
-      {stayList.map((stay, index) => {
+      {stays.map((stay, index) => {
         return (
           <div className="stay-item" key={index}>
             <img className="stay-picture" src={stay.photo} alt={stay.city} />

@@ -85,3 +85,22 @@
   color: #333333;
   margin-bottom: 50px;
 }
+.my-footer {
+  text-align: center;
+  color: #828282;
+  padding-bottom: 20px;
+}
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.number-of-stays {
+  position: relative;
+  top: 50px;
+  right: 50px;
+}
+@media only screen and (max-width: 720px) {
+  .stay-list {
+    grid-template-columns: 1fr;
+  }
+}
