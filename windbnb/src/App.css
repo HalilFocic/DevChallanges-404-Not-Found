@@ -99,11 +99,7 @@
   top: 50px;
   right: 50px;
 }
-@media only screen and (max-width: 720px) {
-  .stay-list {
-    grid-template-columns: 1fr;
-  }
-}
+
 .modal {
   position: fixed;
   top: 0;
@@ -123,7 +119,7 @@
   border-radius: 16px;
 }
 .show {
-  display: inline;
+  display: inline !important;
 }
 .modal-item {
   width: 33%;
@@ -135,6 +131,10 @@
 }
 .modal-border {
   border-right: 1px solid #f2f2f2;
+}
+.modal-border:hover {
+  border: 1px solid #333333;
+  border-radius: 16px;
 }
 .modal-location,
 .modal-guests {
@@ -158,4 +158,140 @@
 .btn-search-icon {
   position: relative;
   top: 5px;
+}
+.mobile-search {
+  display: none;
+}
+.location-menu {
+  position: absolute;
+  left: 118px;
+  top: 157px;
+  color: #4f4f4f;
+  font-size: 14px;
+  display: none;
+}
+.location-item {
+  margin: 25px;
+}
+.location-icon {
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+.guest-menu {
+  position: absolute;
+  left: 600px;
+  top: 100px;
+  display: none;
+}
+.guest-item {
+  margin-top: 40px;
+}
+.guest-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+.guest-desc {
+  font-size: 14px;
+  color: #828282;
+}
+.guest-btn {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  color: #828282;
+  font-weight: bolder;
+  margin: 5px 10px;
+}
+@media only screen and (max-width: 720px) {
+  .wrapper {
+    padding: 0;
+    text-align: center;
+  }
+  .stay-picture {
+    width: 350px;
+    height: 238px;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .stay-list {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+  .wind-logo {
+    margin-top: 19px;
+    margin-left: 13px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100px;
+  }
+  .search-bar {
+    width: 95%;
+    margin: auto;
+  }
+  .right-border {
+    width: 40%;
+  }
+  .wind-title {
+    margin-left: 20px;
+  }
+  .stay-desc {
+    width: 85%;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .stay-title {
+    position: relative;
+    right: 15px;
+  }
+  .number-of-stays {
+    top: 45px;
+    right: 30px;
+  }
+  .modal-white {
+    padding: 20px;
+  }
+  .modal-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .modal-item,
+  .right-border {
+    width: 100%;
+  }
+  .modal-search {
+    position: fixed;
+    top: 380px;
+    right: 2px;
+    padding: 15px;
+  }
+  .location-menu {
+    left: 85px;
+  }
+  .guest-menu {
+    left: 135px;
+    top: 150px;
+  }
+  .mobile-search {
+    display: inline;
+    position: fixed;
+    width: 126px;
+    height: 48px;
+    left: 0px;
+  }
+  .btn-search-icon {
+    padding: 7px;
+  }
+  .search-item {
+    font-size: 14px;
+    padding-top: 20px;
+  }
 }
