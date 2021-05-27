@@ -43,6 +43,8 @@
   border: 1px solid #bdbdbd;
   box-sizing: border-box;
   border-radius: 12px;
+  padding-left: 15px;
+  color: #828282;
 }
 .add-btn {
   width: 20%;
@@ -53,4 +55,24 @@
   color: white;
   border: 0;
   margin-left: 4%;
+}
+.to-do {
+  padding-left: 10px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.todo-item {
+  margin: 20px 0;
+}
+.todo-check {
+  width: 24px;
+  height: 24px;
+}
+.todo-title {
+  margin-left: 15px;
+  position: relative;
+  bottom: 6px;
+}
+.finished {
+  text-decoration: line-through;
 }
