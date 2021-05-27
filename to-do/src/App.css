@@ -2,4 +2,55 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.App {
+  width: 40%;
+  margin: auto;
+}
+.app-title {
+  font-weight: 700;
+  margin: auto;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.app-slider {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bdbdbd;
+}
+.slider-item {
+  width: 33%;
+  text-align: center;
+  color: #333333;
+  font-weight: 600;
+  height: 30px;
+  padding-top: 5px;
+}
+.slider-item:hover {
+  cursor: pointer;
+  background: rgba(97, 96, 96, 0.171);
+}
+.app-form {
+  margin-top: 20px;
+}
+.app-input {
+  width: 70%;
+  height: 56px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.add-btn {
+  width: 20%;
+  height: 56px;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  color: white;
+  border: 0;
+  margin-left: 4%;
 }
