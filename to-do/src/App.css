@@ -76,3 +76,11 @@
 .finished {
   text-decoration: line-through;
 }
+.slider-text {
+  width: 40%;
+  margin: auto;
+  padding-bottom: 4px;
+}
+.active {
+  border-bottom: 3px solid #2f80ed;
+}

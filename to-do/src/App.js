@@ -31,13 +31,25 @@ function App() {
 
       <div className="app-slider">
         <div className="slider-item" onClick={() => changeSlider("all")}>
-          <div className="slider-text">All</div>
+          <div className={`slider-text ${sliderSelect === "all" && "active"}`}>
+            All
+          </div>
         </div>
         <div className="slider-item" onClick={() => changeSlider("active")}>
-          <div className="slider-text">Active</div>
+          <div
+            className={`slider-text ${sliderSelect === "active" && "active"}`}
+          >
+            Active
+          </div>
         </div>
         <div className="slider-item" onClick={() => changeSlider("completed")}>
-          <div className="slider-text">Completed</div>
+          <div
+            className={`slider-text ${
+              sliderSelect === "completed" && "active"
+            }`}
+          >
+            Completed
+          </div>
         </div>
       </div>
       <form className="app-form">
