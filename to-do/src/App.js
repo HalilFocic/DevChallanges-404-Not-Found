@@ -11,6 +11,16 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (inputValue === "") {
+      alert("Do not submit empty items");
+      return;
+    }
+    for (var i = 0; i < todoList.length; i++) {
+      if (inputValue == todoList[i].title) {
+        alert("Pleaes don't add same items in the list!");
+        return;
+      }
+    }
     let newTodo = [...todoList, { title: inputValue, completed: false }];
     setTodoList(newTodo);
     setInputValue("");
