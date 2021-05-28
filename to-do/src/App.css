@@ -84,3 +84,18 @@
 .active {
   border-bottom: 3px solid #2f80ed;
 }
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 90%;
+  }
+  .app-slider {
+    justify-content: space-evenly;
+  }
+  .slider-text {
+    font-size: 14px;
+    width: 100%;
+  }
+  .add-btn {
+    width: 85px;
+  }
+}
