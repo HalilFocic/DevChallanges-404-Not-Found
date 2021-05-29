@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+.random {
+  position: absolute;
+  height: 22px;
+  left: 1247px;
+  top: 31px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+
+  color: #4f4f4f;
+}
+.random:hover {
+  cursor: pointer;
+}
+.refresh-icon {
+  position: relative;
+  top: 6px;
+}
+.quote-container {
+  padding-top: 15%;
+  width: 714px;
+  margin: auto;
+}
+.quote-text {
+  width: 614px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  border-left: 8px solid #f7df94;
+  padding-left: 90px;
+}
+.quote-desc {
+  padding: 50px 90px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.quote-desc:hover {
+  background: #333333;
+  color: white !important;
+}
+.author {
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 24px;
+}
+.genre {
+  color: #828282;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.author-top {
+  position: absolute;
+  width: 164px;
+  height: 42px;
+  left: 416px;
+  top: 101px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #333333;
+}
+.arrow-icon {
+  color: white;
+  font-size: 32px;
+}
