@@ -27,7 +27,7 @@
   top: 6px;
 }
 .quote-container {
-  padding-top: 15%;
+  padding-top: 10%;
   width: 714px;
   margin: auto;
 }
@@ -38,6 +38,7 @@
   line-height: 43px;
   border-left: 8px solid #f7df94;
   padding-left: 90px;
+  margin: 70px 0;
 }
 .quote-desc {
   padding: 50px 90px;
@@ -63,8 +64,6 @@
 }
 .author-top {
   position: absolute;
-  width: 164px;
-  height: 42px;
   left: 416px;
   top: 101px;
 
