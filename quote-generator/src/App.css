@@ -79,3 +79,42 @@
   color: white;
   font-size: 32px;
 }
+@media only screen and (max-width: 600px) {
+  .quote-container {
+    width: 100%;
+  }
+  .quote-text,
+  .quote-desc {
+    padding-left: 0;
+  }
+  .quote-text {
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 10px;
+    width: 80%;
+  }
+  .quote-desc {
+    padding-left: 20px;
+  }
+  .author {
+    font-size: 18px;
+  }
+  .quote-desc {
+    background: #333333;
+    color: white !important;
+    padding: 25px;
+    padding-right: 60px;
+  }
+  .author-top {
+    position: fixed;
+    top: 40px;
+    left: 10px;
+    font-size: 24px;
+  }
+  .random {
+    position: fixed;
+    top: 10px;
+    left: 220px;
+  }
+}
