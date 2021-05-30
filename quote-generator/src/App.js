@@ -75,6 +75,9 @@ function App() {
           </div>
         )}
       </div>
+      <div className="my-footer">
+        created by <strong>Halil Focic</strong> - devChallenges.io
+      </div>
     </div>
   );
 }

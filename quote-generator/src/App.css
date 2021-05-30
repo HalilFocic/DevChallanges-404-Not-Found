@@ -79,6 +79,13 @@
   color: white;
   font-size: 32px;
 }
+.my-footer {
+  position: fixed;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+  color: #828282;
+}
 @media only screen and (max-width: 600px) {
   .quote-container {
     width: 100%;
