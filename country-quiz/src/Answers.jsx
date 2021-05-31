@@ -1,21 +1,22 @@
-import React from "react";
-
-const Answers = () => {
+import React, { useEffect } from "react";
+const LETTERS = ["A", "B", "C", "D"];
+const Answers = ({ question, handleAnswer }) => {
+  console.log(question);
+  const { answers } = question;
   return (
     <div className="answers">
-      <div className="quiz-answer">
-        <div className="quiz-letter">A</div>
-        Mostar
-      </div>
-      <div className="quiz-answer">
-        <div className="quiz-letter">B</div>Sarajevo
-      </div>
-      <div className="quiz-answer">
-        <div className="quiz-letter">C</div>Banja Luka
-      </div>
-      <div className="quiz-answer">
-        <div className="quiz-letter">D</div>Cekrcici
-      </div>
+      {answers.map((ans, index) => {
+        return (
+          <div
+            className="quiz-answer"
+            key={index}
+            onClick={() => handleAnswer(index)}
+          >
+            <div className="quiz-letter">{LETTERS[index]}</div>
+            {ans}
+          </div>
+        );
+      })}
     </div>
   );
 };

@@ -10,7 +10,7 @@ body {
 }
 .quiz-container {
   margin: auto;
-  padding-top: 10%;
+  padding-top: 5%;
   width: 464px;
 }
 .quiz-title {
@@ -63,10 +63,35 @@ body {
   border: 3px solid #f9a826;
   cursor: pointer;
 }
+.wrong {
+  background: #ea8282;
+}
+.correct {
+  background: #60bf88;
+}
 .quiz-letter {
   font-size: 24px;
   font-weight: 500;
   margin: 0 47px 0 19px;
 }
-.quiz-answer-text {
+.next-btn {
+  width: 116px;
+  height: 56px;
+  background: #f9a826;
+  box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+  border-radius: 12px;
+  line-height: 56px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  margin-left: auto;
+  display: none;
+  cursor: pointer;
+}
+.show-btn {
+  display: block;
+}
+.question-image {
+  width: 84px;
+  height: 54px;
 }
