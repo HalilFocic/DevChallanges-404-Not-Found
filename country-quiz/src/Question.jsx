@@ -7,10 +7,7 @@ const Question = ({ question }) => {
   } else {
     return (
       <>
-        <img
-          className="question-image"
-          src="https://restcountries.eu/data/tls.svg"
-        />
+        <img className="question-image" src={flag} />
 
         <div className="quiz-question">
           Which country does this flag belong to?

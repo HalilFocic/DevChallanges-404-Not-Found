@@ -8,7 +8,7 @@ const Answers = ({ question, handleAnswer }) => {
       {answers.map((ans, index) => {
         return (
           <div
-            className="quiz-answer"
+            className="quiz-answer quiz-answer-hover"
             key={index}
             onClick={() => handleAnswer(index)}
           >

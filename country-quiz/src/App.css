@@ -57,7 +57,7 @@ body {
   color: rgba(96, 102, 208, 0.8);
   display: flex;
 }
-.quiz-answer:hover {
+.quiz-answer-hover:hover {
   color: white;
   background: #f9a826;
   border: 3px solid #f9a826;
@@ -65,9 +65,21 @@ body {
 }
 .wrong {
   background: #ea8282;
+  color: white;
+  border: 3px solid #ea8282;
+}
+.wrong:hover {
+  background: #ea8282;
+  border: 3px solid #ea8282;
 }
 .correct {
-  background: #60bf88;
+  color: white;
+  background: #60bf88 !important;
+  border: 3px solid #60bf88;
+}
+.correct:hover {
+  background: #60bf88 !important;
+  border: 3px solid #60bf88;
 }
 .quiz-letter {
   font-size: 24px;
@@ -94,4 +106,35 @@ body {
 .question-image {
   width: 84px;
   height: 54px;
+}
+.results {
+  text-align: center;
+}
+.winner-pic {
+  width: 238px;
+  height: 128px;
+}
+.result-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+
+  color: #1d355d;
+}
+.result-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #1d355d;
+}
+.big-green {
+  color: #6fcf97;
+  font-size: 34px;
+  line-height: 54px;
+  font-weight: 700;
 }

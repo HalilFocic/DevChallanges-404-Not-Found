@@ -4,6 +4,7 @@ import axios from "axios";
 import Question from "./Question";
 import Answers from "./Answers";
 import shuffle from "shuffle-array";
+import Result from "./Result";
 const fetchCountries = async () => {
   let returnArray = [];
   await axios.get(`https://restcountries.eu/rest/v2/all`).then((res) => {
@@ -19,11 +20,33 @@ const Quiz = () => {
   const [loading, setLoading] = useState(true);
   const [counter, setCounter] = useState(0);
   const [answered, setAnswered] = useState(false);
-
+  const [lastClicked, setLastClicked] = useState(null);
+  const [score, setScore] = useState(0);
   const handleAnswer = (index) => {
+    if (answered) {
+      return;
+    }
+    let tempAnswers = document.getElementsByClassName("quiz-answer");
+    for (var i = 0; i < tempAnswers.length; i++) {
+      tempAnswers[i].classList.toggle("quiz-answer-hover");
+    }
+    tempAnswers[index].classList.toggle("wrong");
+    tempAnswers[tenQuestions[counter].correctIndex].classList.toggle("correct");
+    if (index == tenQuestions[counter].correctIndex) {
+      setScore(score + 1);
+    }
+    setLastClicked(index);
     setAnswered(true);
   };
   const loadNextQuestion = () => {
+    let tempAnswers = document.getElementsByClassName("quiz-answer");
+    for (var i = 0; i < tempAnswers.length; i++) {
+      tempAnswers[i].classList.toggle("quiz-answer-hover");
+    }
+    tempAnswers[tenQuestions[counter].correctIndex].classList.toggle("correct");
+    if (lastClicked != null) {
+      tempAnswers[lastClicked].classList.toggle("wrong");
+    }
     setAnswered(false);
     setCounter(counter + 1);
   };
@@ -84,21 +107,25 @@ const Quiz = () => {
         </div>
       </div>
       <div className="quiz-content">
-        {!loading && (
-          <>
-            <Question question={tenQuestions[counter]} />
-            <Answers
-              question={tenQuestions[counter]}
-              handleAnswer={handleAnswer}
-            />
-            <div
-              className={`next-btn ${answered && "show-btn"}`}
-              onClick={() => loadNextQuestion()}
-            >
-              Next
-            </div>
-          </>
-        )}
+        {!loading ? (
+          counter < 10 ? (
+            <>
+              <Question question={tenQuestions[counter]} />
+              <Answers
+                question={tenQuestions[counter]}
+                handleAnswer={handleAnswer}
+              />
+              <div
+                className={`next-btn ${answered && "show-btn"}`}
+                onClick={() => loadNextQuestion()}
+              >
+                Next
+              </div>
+            </>
+          ) : (
+            <Result score={score} />
+          )
+        ) : null}
       </div>
     </div>
   );
